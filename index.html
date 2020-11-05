@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Palmera Beach</title>
+</head>
+<body id="introg">
+
+    <!-- HEADER  -->
+  <section class="fixed-top header">
+        <div class="row">
+            <div class="col-4 d-flex align-items-center">
+                <i class="fa fa-bars openBtn" onclick="openMenu()"></i>
+                <select class="selectpicker">
+                    <option>EN</option>
+                    <option>DE</option>
+                    <option>FR</option>       
+                </select>
+                <div class="headerp d-none d-xl-block">(+30) 28970 22481 - <a href="#" class="blue-text">COVID-19</a></div>
+            </div>
+            <div class="col-4 text-center">
+                <a href="index.html">
+                <img src="img/palmera-hotel-logo.png" class="sitelogo" />
+                </a>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-end">
+              <i class="fa fa-phone fa-2x d-xl-none"></i>
+              <a href="#" class="hotelBtn bookBtn mr-3 d-none d-xl-block">HOTEL &amp; FLIGHT</a>
+              <a href="#" class="bookBtn ml-2">BOOK NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- MOBILE MENU  -->
+    <div class="menu-container" id="navbar">
+        <i class="fa fa-times fa-2x closebtn" onclick="closeMenu()"></i>
+        <div class="menu-content">
+            <a href="thehotel.html">THE HOTEL</a>
+            <a href="accommodation.html">ACCOMMODATION</a>
+            <a href="dining.html">DINING</a>
+            <a href="#">EXPERIENCES</a>
+            <a href="#">SPECIAL OFFERS</a>
+            <a href="#">PHOTO GALLERY</a>
+            <a href="#">CONTACT</a>
+            <hr>
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </div>
+
+    <!-- CAROUSEL  -->
+    <div class="carouselSpace">
+        <div id="carousel_slider" class="carousel carousel-fade padding" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background:url(img/carousel1.jpg) center center; background-size: cover;"></div> 
+                <div class="carousel-item" style="background:url(img/carousel2.jpg) center center; background-size: cover;"></div> 
+                <div class="carousel-item" style="background:url(img/carousel3.jpg) center center; background-size: cover;"></div> 
+                <div class="carousel-item" style="background:url(img/carousel4.jpg) center center; background-size: cover;"></div> 
+                <div class="carousel-item" style="background:url(img/carousel5.jpg) center center; background-size: cover;"></div> 
+            </div>
+            <a class="carousel-control-prev" href="#carousel_slider" role="button" data-slide="prev" style="transform: rotate(180deg);">
+                <img src="img/right-arrow.svg" width="50"/>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_slider" role="button" data-slide="next">
+                <img src="img/right-arrow.svg" width="50"/>
+                <span class="sr-only">Next</span>
+            </a>
+            <div class="contentOverSlider">
+                <div class="d-flex flex-row h-100">
+                    <div class="col align-self-center">
+                        <h1>enjoy a comfortable stay!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKINGROW  -->
+    <div class="bookingRow">
+        <div class="container d-flex justify-content-center">
+            <form class="form-inline shadow"> 
+                <div class="field form-group has-feedback">
+                    <label>CHECK-IN</label>
+                    <input type="date" name="checkin" id="checkin" class="form-control" value="2021-06-25" autocomplete="off">
+                </div>
+                <div class="field form-group has-feedback">
+                <label>CHECK-OUT</label>
+                <input type="date" name="checkout" id="checkout" class="form-control" value="2021-06-25" autocomplete="off">
+            </div>
+                <div class="field form-group">
+                    <label>ADULTS</label>
+                    <select class="form-control" name="Adults">
+                        <option>1</option>
+                        <option selected="">2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="field form-group">
+                    <label>ROOMS</label>
+                    <select class="form-control" name="Rooms">
+                        <option>0</option>
+                        <option selected="">1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="field form-group ">
+                    <button type="submit" class="bookBtn">BOOK NOW</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- WELCOME SPACE  -->
+    <section class="welcomeSpace margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 welcomeSpaceLeftCol"></div>
+                <div class="col-md-6 welcomeSpaceRightCol leftSpace mt-0">
+                    <h2>IN THE HEART OF HERSONISSOS<span class="text-left">welcome to palmera beach</span></h2>
+                    <p>Palmera Beach Hotel located in the center of picturesque and cosmopolitan port of Hersonissos 
+                        it offers warm, friendly and pleasant holidays to guests up to 16 years old, 
+                        for those who want to relax and enjoy the Cretan hospitality.
+                    </p>
+                    <a href="thehotel.html" class="discoverLink discoverWithArrow">DISCOVER
+                        <img src="img/right-arrow.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAY  -->
+    <section class="stay margin">
+        <div class="row">
+        <div class="col-md-4">
+            <h2 class="text-left">PLEASANT HOLIDAYS<span class="text-left">stay</span></h2>
+            <p>Comfort, Exclusive and Executive rooms, stylishly decorated, designed to create a relaxing atmosphere.<br><br>
+        
+            The Palmera Beach Hotel rooms designed to offer times of relaxation and leisure, 
+            provide tasteful and comfortable accommodation for 2 or 3 persons and are ideal for couples or friends, 
+            adults only, up to 16 years old.<br><br>
+            
+            Palmera Beach Hotel located in the center of picturesque and cosmopolitan Hersonissos it offers warm, 
+            friendly and pleasant holidays to those who want to relax and enjoy the Cretan hospitality.
+            </p>
+            <a href="accommodation.html" class="discoverLink discoverWithArrow mt-2">DISCOVER
+                <img src="img/right-arrow.svg">
+            </a>
+        </div>
+        <div class="col-md-8 rightStay">
+            <div class="stay-owl owl-carousel owl-theme">   
+            <div class="room-box OtherRoom">
+                        <div class="img" style="background:url(img/stay1.jpg) no-repeat center"></div>
+                            <div class="room-box-overlay d-flex flex-wrap flex-column justify-content-center">
+                                <h2 class="stayH2">standar room</h2>
+                                    <ul class="RoomDetails d-none d-sm-block">
+                                        <li>
+                                            <div class="inside">occupancy: <p> 2-3 adults</p></div>                                                       						
+                                        </li>
+                                        <li>
+                                            <div class="inside">size: <p> 25sq.m </p></div>             						
+                                        </li>
+                                        <li>
+                                            <div class="inside">view: <p> city</p></div>           						
+                                        </li>
+                                    </ul>
+                                    <div class="links">
+                                        <a href="#" class="discoverLink discoverWithArrow mr-1">DISCOVER
+                                            <img src="img/right-arrow.svg" class="img-fluid">
+                                        </a>
+                                        <a href="#" class="bookBtn">BOOK NOW</a>
+                                    </div>
+                            </div>
+                    </div>
+            <div class="room-box OtherRoom">
+                        <div class="img" style="background:url(img/stay2.jpg) no-repeat center"></div>
+                            <div class="room-box-overlay d-flex justify-content-center flex-wrap flex-column">
+                                <h2 class="stayH2">standar room<br> sea view</h2>
+                                    <ul class="RoomDetails d-none d-sm-block">
+                                        <li>
+                                            <div class="inside">occupancy: <p> 2-3 adults</p></div>                                                       						
+                                        </li>
+                                        <li>
+                                            <div class="inside">size: <p> 25sq.m </p></div>             						
+                                        </li>
+                                        <li>
+                                            <div class="inside">view: <p> city</p></div>           						
+                                        </li>
+                                    </ul>
+                                    <div class="links">
+                                        <a href="#" class="discoverLink discoverWithArrow mr-1">DISCOVER
+                                            <img src="img/right-arrow.svg" class="img-fluid">
+                                        </a>
+                                        <a href="#" class="bookBtn">BOOK NOW</a>
+                                    </div>
+                            </div>
+                    </div>
+            <div class="room-box OtherRoom">
+                        <div class="img" style="background:url(img/stay1.jpg) no-repeat center"></div>
+                            <div class="room-box-overlay d-flex justify-content-center flex-wrap flex-column">
+                                <h2 class="stayH2">superior room</h2>
+                                    <ul class="RoomDetails d-none d-sm-block">
+                                        <li>
+                                            <div class="inside">occupancy: <p> 2-3 adults</p></div>                                                       						
+                                        </li>
+                                        <li>
+                                            <div class="inside">size: <p> 25sq.m </p></div>             						
+                                        </li>
+                                        <li>
+                                            <div class="inside">view: <p> city</p></div>           						
+                                        </li>
+                                    </ul>
+                                    <div class="links">
+                                        <a href="#" class="discoverLink discoverWithArrow mr-1">DISCOVER
+                                            <img src="img/right-arrow.svg" class="img-fluid">
+                                        </a>
+                                        <a href="#" class="bookBtn">BOOK NOW</a>
+                                    </div>
+                            </div>
+                    </div>
+            <div class="room-box OtherRoom">
+                        <div class="img" style="background:url(img/stay2.jpg) no-repeat center"></div>
+                            <div class="room-box-overlay d-flex justify-content-center flex-wrap flex-column">
+                                <h2 class="stayH2">superior room<br> sea view</h2>
+                                    <ul class="RoomDetails d-none d-sm-block">
+                                        <li>
+                                            <div class="inside">occupancy: <p> 2-3 adults</p></div>                                                       						
+                                        </li>
+                                        <li>
+                                            <div class="inside">size: <p> 25sq.m </p></div>             						
+                                        </li>
+                                        <li>
+                                            <div class="inside">view: <p> city</p></div>           						
+                                        </li>
+                                    </ul>
+                                    <div class="links">
+                                        <a href="superiorRoomSeaView.html" class="discoverLink discoverWithArrow mr-1">DISCOVER
+                                            <img src="img/right-arrow.svg" class="img-fluid">
+                                        </a>
+                                        <a href="#" class="bookBtn">BOOK NOW</a>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+       
+
+     <!-- REVIEWS AND WHYBOOK SPACE  -->
+     <section class="reviesWhySpace margin">
+        <div class="row">
+            <div class="col-md-6 reviesWhySpaceLeftCol center">
+                    <span>reviews</span>
+                    <div class="reviews-owl owl-carousel owl-theme">
+                        <div class="reviesBox">
+                            <div class="container">
+                            <q>We will return</q>
+                            <p>We chose this hotel from booking.com after visiting Crete on two previous occasions and 
+                                eating and drinking there. Best decision we had made , from start to finish we had a 
+                                wonderful holiday!!To the front of the hotel there s a beautiful restaurant overlooking 
+                                the Aegean Sea, the view is stunning.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="reviesBox">
+                            <q>We will return2</q>
+                            <p>We chose this hotel from booking.com after visiting Crete on two previous occasions and 
+                                eating and drinking there. Best decision we had made , from start to finish we had a 
+                                wonderful holiday!!To the front of the hotel there s a beautiful restaurant overlooking 
+                                the Aegean Sea, the view is stunning.
+                            </p>
+                        </div>
+                        <div class="reviesBox">
+                            <q>We will return3</q>
+                            <p>We chose this hotel from booking.com after visiting Crete on two previous occasions and 
+                                eating and drinking there. Best decision we had made , from start to finish we had a 
+                                wonderful holiday!!To the front of the hotel there s a beautiful restaurant overlooking 
+                                the Aegean Sea, the view is stunning.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-6 reviesWhySpaceRightCol d-flex justify-content-center align-items-center center">
+                <div>
+                    <span class="text-left">why book palmera hotel?</span>
+                    <ul>
+                        <li><img src="img/bullet.jpg" class="mr-3">ADULTS ONLY HOTEL</li>
+                        <li><img src="img/bullet.jpg" class="mr-3">ONLY 1 MINUTE WALK FROM THE BEACH</li>
+                        <li><img src="img/bullet.jpg" class="mr-3">RESTAURANT LOCATED NEXT TO THE SEA</li>
+                    </ul>
+                    <a href="#" class="bookBtn">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASTE  -->
+    <section class="taste margin">
+        <div class="container-fluid tastePic">
+        <div class="container p-5 tasteContainer">
+        <div class="row">
+        <div class="col-md-6 leftSide">
+            <h4>LOCATED NEXT TO THE SEA</h4>
+            <span class="text-left">TASTE</span>
+        </div>
+        <div class="col-md-6 rightSide" style="background-color: rgba(34, 34, 34, 0.8);">
+            <p class="mt-1">Enjoy a varied buffet, with hot and cold dishes.<br>
+            Air-conditioned main restaurant for breakfast and dinner. Late continental breakfast on request.
+            </p>
+            <a href="#" class="discoverLink discoverWithArrow">DISCOVER
+            <img src="img/right-arrow.svg">
+            </a>
+        </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    
+    <!-- EXPERIENCES  -->
+    <section class="experiences margin">
+        <h2>GIVE TO YOURSELF<span>experiences</span></h2>
+        <div class="row">
+            <div class="col-sm-6 leftCol">
+                <div class="row relRow">
+                    <img src="img/wellness.jpg" alt="" class="img-fluid mb-5">
+                    <div class="top-left">wellness</div>
+                </div>
+                <div class="row relRow">
+                    <img src="img/excursions.jpg" alt="" class="img-fluid">
+                    <div class="top-left">excursions</div>
+                </div>
+            </div>
+            <div class="col-sm-6 rightCol m-auto">
+                <div class="row relRow">
+                    <img src="img/destination.jpg" alt="" class="img-fluid">
+                    <div class="top-left">destination</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- INSTAGRAM  -->
+    <section class="instagram margin">
+        <h2>INSTAGRAM<span>#palmerahotel</span></h2>
+        <div class="d-flex justify-content-center flex-wrap no-gutters">
+            <div class="col-6 col-sm-4 col-lg"><img src="img/instagram1.jpg" alt="" class="img-fluid"></div>
+            <div class="col-6 col-sm-4 col-lg"><img src="img/instagram2.jpg" alt="" class="img-fluid"></div>
+            <div class="col-6 col-sm-4 col-lg"><img src="img/instagram3.jpg" alt="" class="img-fluid"></div>
+            <div class="col-6 col-sm-4 col-lg"><img src="img/instagram4.jpg" alt="" class="img-fluid"></div>
+            <div class="col-6 col-sm-4 col-lg"><img src="img/instagram5.jpg" alt="" class="img-fluid"></div>
+        </div>
+    </section>
+
+        
+    <!-- WHYBOOK  -->
+    <section class="margin">
+        <h2>WHY?<span>book through our website</span></h2>
+        <div class="whybook">
+               <div class="row justify-content-center">
+                        <div class="col-6 col-md">
+                            <div class="num">1</div>
+                            <hr>
+                            <p class="whyp">100% Secure Payments by Credit Card</p>
+                        </div>
+                        <div class="col-6 col-md">
+                            <div class="num">2</div>
+                            <hr>
+                            <p class="whyp">Last Minute Offers</p>
+                        </div>
+                        <div class="col-6 col-md">
+                            <div class="num">3</div>
+                            <hr>
+                            <p class="whyp">Exclusive Deals</p>
+                        </div>
+                        <div class="col-6 col-md">
+                            <div class="num">4</div>
+                            <hr>
+                            <p class="whyp">Privacy policy</p>
+                        </div>
+                        <div class="col-6 col-md">
+                            <div class="num">5</div>
+                            <hr>
+                            <p class="whyp">BEST AVAILABLE RATE</p>
+                        </div>
+                    </div>               
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="#" class="bookBtn">BOOK NOW</a>
+                </div>
+        </div>
+    </section>
+
+
+     <!-- AWARDS  -->
+     <section class="awards margin">
+        <span>awards</span>
+        <div class="container">
+          <div class="awards-owl owl-carousel owl-theme">
+            <img src="img/award1.jpg" alt="" class="img-fluid">
+            <img src="img/award2.jpg" alt="" class="img-fluid">
+            <img src="img/award3.jpg" alt="" class="img-fluid">
+            <img src="img/award4.jpg" alt="" class="img-fluid">
+            <img src="img/award5.jpg" alt="" class="img-fluid">
+        </div>
+      </section>
+
+     <!-- CONTACT  -->
+     <section class="contact margin">
+        <div class="row">
+          <div class="col-md-6 mapCol"></div>
+          <div class="col-md-6 contactCol">
+                <div class="contacSpace mb-5">
+                  <h3>contact</h3>
+                  <p>25th Martiou str. 14<br>
+                    GR 70014 Hersonisos Crete<br><br>
+                    
+                    Email: info@palmerahotel.gr<br><br>
+                    
+                    Tel: +30 28970 22481<br>
+                    Fax: +30 28970 22483
+                  </p>
+                  <img src="img/facebook.png" alt="facebook logo" class="fblogo">
+                </div>
+                <div class="newsletterSpace">
+                  <h3>Newsletter</h3>
+                  <form class="form-inline mt-4">
+                    <div class="form-group mr-2">
+                        <input type="text" class="form-control" placeholder="Fullname" required>
+                    </div>
+                    <div class="form-group mr-2">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <a href="#" class="discoverLink discoverLink2 discoverWithArrow">DISCOVER
+                        <img src="img/right-arrow.svg">
+                    </a>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNMENU  -->
+    <section class="downMenu">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="accommodation.html">ACCOMMODATION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CAREER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PRIVACY POLICY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">COOKIE SETTINGS</a>
+            </li>
+        </ul>
+        <!-- COPYRIGHT  -->
+        <div class="copyright">
+            <p>MH.T.E.1039K013A2946400| Cookie Settings | © 2020 Palmera Beach Hotel & Spa. All rights reserved | Designed and developed by <a href="#">Eyewide Hotel Internet Marketing</a></p>
+        </div>
+    </section>	
+
+    <!-- BACK TO TOP  -->
+    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
